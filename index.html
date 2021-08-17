@@ -332,33 +332,29 @@
         </div>
     </div>
 </div>
-<!-- Messenger Plugin chat Code -->
-<div id="fb-root"></div>
-
-<!-- Your Plugin chat code -->
-<div id="fb-customer-chat" class="fb-customerchat">
-</div>
-
-<script>
-    var chatbox = document.getElementById('fb-customer-chat');
-    chatbox.setAttribute("page_id", "168561111944292");
-    chatbox.setAttribute("attribution", "biz_inbox");
-
-    window.fbAsyncInit = function() {
+<!-- Messenger Chat Plugin Code -->
+    <div id="fb-root"></div>
+    <!-- Your Chat Plugin code -->
+    <div id="fb-customer-chat" class="fb-customerchat">
+    </div>
+    <script>
+      var chatbox = document.getElementById('fb-customer-chat');
+      chatbox.setAttribute("page_id", "347995745702867");
+      chatbox.setAttribute("attribution", "biz_inbox");
+      window.fbAsyncInit = function() {
         FB.init({
-            xfbml            : true,
-            version          : 'v11.0'
+          xfbml            : true,
+          version          : 'v11.0'
         });
-    };
-
-    (function(d, s, id) {
+      };
+      (function(d, s, id) {
         var js, fjs = d.getElementsByTagName(s)[0];
         if (d.getElementById(id)) return;
         js = d.createElement(s); js.id = id;
         js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
         fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));
-</script>
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
     
 <div style="text-align: left; z-index: 2147483647; border: none; visibility: visible; bottom: 0px; right: 0px; position: fixed; width: 70px; height: 70px; top: auto;margin-bottom: 12%; margin-right: 1%">
     <a href="tel:+84796295776"><img src="assert/img/dien-thoai.gif" style="width: 70px; height: 70px; position: absolute; float: right"></a>
