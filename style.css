@@ -4,11 +4,34 @@
     box-sizing: border-box;
 }
 
+img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+iframe {
+    border-radius: 5px;
+}
+
+.row {
+    margin: 0;
+}
+
 .header {
-    background-image: url(/assert/img/background-header.jpg);
+    background-image: url(assert/img/background-header.jpg);
     background-repeat: no-repeat;
-    min-height: 95vh;
+    background-size: cover;
     position: relative;
+    height: auto;
+    width: 100%;
+    padding: 0 2%;
+}
+
+.header-content {
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
 }
 
 .header::before {
@@ -19,37 +42,55 @@
     right: 0;
     bottom: 0;
     background-color: rgba(85, 125, 255, 0.57);
-    min-height: 95vh;
 }
 
 .logo-header {
-    position: absolute;
-    top: 5%;
-    left: 10%;
+    position: relative;
+    top: 0;
+    left: 0;
     padding: 10px;
     background-color: #272882;
     border-radius: 5px;
-    height: 8%;
-    display: flex;
-    align-items: center;
+    display: inline-block;
+    width: auto;
+    height: auto;
+    margin: 2% 0;
 }
 
 .header-title {
-    position: absolute;
-    top: 16%;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin: 2% 0;
+}
+
+.header-title h2 {
     text-transform: uppercase;
     font-weight: bold;
     color: #fff;
-    left: 10%;
-    font: 3em sans-serif;
-    min-height: 8%;
+    font: 3rem sans-serif;
+    display: inline-block;
+    font-family: Myriad Pro;
+}
+
+.header-title p {
+    font: 2.5rem sans-serif;
+    font-family: Myriad Pro;
+    color: #fff;
+    display: inline-block;
+    width: 80%;
+    text-align: center;
 }
 
 .video-header {
-    position: absolute;
-    top: 25%;
-    left: 10%;
-    min-height: 48%;
+    position: relative;
+    left: 0;
+    padding-bottom: 56.25%;
+    /* 16:9 */
+    height: 0;
+    width: 95%;
+    margin: 2% 0;
 }
 
 .video-header iframe {
@@ -60,47 +101,43 @@
     height: 100%;
 }
 
-.header-content {
-    position: absolute;
-    top: 80%;
-    font-weight: 900;
-    color: #fff;
-    left: 10%;
-    font: 2.5em sans-serif;
-}
-
-.contactForm .form-control {
-    font-size: 20px;
+.contact-form .form-control {
+    font-size: 16px;
+    width: 100%;
 }
 
 .form-header {
-    font-weight: 900;
+    font-weight: bold;
     color: #fff;
-    font: 1.5em sans-serif;
+    font: 1.5rem sans-serif;
+    font-family: Myriad Pro;
 }
 
 .form-control {
-    height: 70px;
+    height: 60px;
     background: #fff;
     color: #000;
-    font-size: 20px;
+    font-size: 16px;
     border-radius: 4px;
     -webkit-box-shadow: none!important;
     box-shadow: none!important;
     border: 1px solid rgba(0, 0, 0, .1);
+    font-family: Myriad Pro;
 }
 
 .header-left {
     display: flex;
-    justify-items: center;
+    justify-content: center;
     align-content: center;
 }
 
 .contact-form {
     padding: 40px 60px;
     background-color: rgba(2, 9, 32, 0.68);
-    width: 90%;
+    width: 95%;
     height: auto;
+    margin: auto 0;
+    border-radius: 5px;
 }
 
 .form-group {
@@ -113,17 +150,26 @@
     border: rgb(27, 64, 189);
     text-transform: uppercase;
     height: 70px;
-    font: 1.5em sans-serif;
+    font: 1.5rem sans-serif;
     font-weight: bold;
+    font-family: Myriad Pro;
+}
+
+.title-content {
+    margin: 50px 0;
 }
 
 .title-content h1 {
     text-transform: uppercase;
     color: #272882;
-    font-size: 3.5rem;
-    font: sans-serif bold;
-    min-height: 8%;
-    margin-bottom: 80px;
+    font-size: 3rem;
+    font: sans-serif;
+    font-family: Myriad Pro;
+    font-weight: bold;
+}
+
+.item-wraper {
+    padding-bottom: 50px;
 }
 
 .item {
@@ -137,6 +183,7 @@
     padding: 45px;
     margin-bottom: 50px;
     color: rgba(74, 78, 89, 1);
+    height: 100%;
 }
 
 .icon {
@@ -156,12 +203,25 @@
 
 .main-content p {
     font: 1.5em sans-serif;
+    font-family: Myriad Pro;
 }
 
 .main-content h4 {
     font: 1.7em sans-serif;
     font-weight: bold;
     text-transform: uppercase;
+    font-family: Myriad Pro;
+}
+
+.list {
+    display: flex;
+    align-content: center;
+}
+
+.check-list-wraper {
+    height: auto;
+    display: block;
+    margin: auto;
 }
 
 .check-list {
@@ -173,6 +233,7 @@
 
 .check-list p {
     font: 2em sans-serif;
+    font-family: Myriad Pro;
     margin: 0 0 0 20px;
     color: rgba(74, 78, 89, 1);
 }
@@ -188,17 +249,18 @@
 }
 
 .logo-company {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     background: #fff;
     padding: 30px;
-    margin: 30px;
     width: 100%;
+    height: 100%;
+    display: flex;
+    border-radius: 5px;
 }
 
 .logo-company img {
-    width: 70%;
+    margin: auto;
+    width: 60%;
+    display: block;
 }
 
 .company {
@@ -208,12 +270,13 @@
 
 #footer {
     background-color: #363844!important;
-    padding: 50px 200px;
+    padding: 5% 10%;
 }
 
 .footer {
     color: white;
-    font: 1em sans-serif;
+    font: 1.2em sans-serif;
+    font-family: Myriad Pro;
 }
 
 .footer img {
@@ -222,4 +285,17 @@
 
 .icon-social a {
     margin: 0 5px;
+}
+
+.logo-footer {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: auto;
+    height: auto;
+    display: inline-block;
+}
+
+.logo-footer img {
+    border-radius: 4px;
 }
