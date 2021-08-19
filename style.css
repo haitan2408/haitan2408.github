@@ -71,13 +71,14 @@ iframe {
     margin: 2% 0;
 }
 
-.header-title h2 {
+.header-title h1 {
     text-transform: uppercase;
     font-weight: bold;
     color: #fff;
-    font: 3rem sans-serif;
+    font: sans-serif;
     display: inline-block;
     font-family: Myriad Pro;
+    font-size: 3rem;
 }
 
 .header-title p {
@@ -246,7 +247,7 @@ iframe {
 
 .video-project {
     width: 100%;
-    padding: 20px;
+    padding: 30px;
 }
 
 .video-project iframe {
@@ -321,7 +322,7 @@ iframe {
 
 .zalo-chat-widget {
     position: fixed;
-    bottom: 150px;
+    bottom: 140px;
     margin-bottom: 120px;
     margin-right: 1%
 }
